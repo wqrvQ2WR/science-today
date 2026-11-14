@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 4x2: 분야 + 제목 + 짧은 설명. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/widget_bg_chem"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/widget_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘의 과학 · 화학"
+        android:textSize="11sp"
+        android:textColor="#D9FFFFFF"
+        android:fontFamily="@font/pretendard_bold" />
+
+    <TextView
+        android:id="@+id/widget_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="순수한 소듐은 물과 만나면 폭발한다!"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="18sp"
+        android:lineSpacingMultiplier="1.05"
+        android:textColor="#FFFFFFFF"
+        android:fontFamily="@font/pretendard_extrabold" />
+
+    <TextView
+        android:id="@+id/widget_short"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="소듐은 물과 반응해 수산화나트륨과 수소를 만든다."
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textSize="13sp"
+        android:lineSpacingMultiplier="1.15"
+        android:textColor="#EBFFFFFF"
+        android:fontFamily="@font/pretendard_regular" />
+</LinearLayout>

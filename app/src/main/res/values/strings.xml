@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">오늘의 과학</string>
+    <string name="widget_small_desc">오늘의 과학 한 줄</string>
+    <string name="widget_large_desc">오늘의 과학 설명까지</string>
+</resources>
