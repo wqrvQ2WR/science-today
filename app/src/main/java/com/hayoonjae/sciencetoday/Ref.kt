@@ -53,6 +53,26 @@ data class DataTable(
     val entries get() = rows.filterIsInstance<TableEntry>()
 }
 
+/** 법칙·원리 한 개. 식과 발견자는 출처에 있는 것만 적고 없으면 빈 문자열. */
+data class Law(
+    val id: String, val ko: String, val en: String, val field: Field,
+    val formula: String, val statement: String, val why: String, val who: String, val source: RefSource,
+) {
+    companion object {
+        fun parse(json: String): List<Law> {
+            val a = JSONObject(json).getJSONArray("laws")
+            return (0 until a.length()).map { a.getJSONObject(it) }.map { o ->
+                val s = o.getJSONObject("source")
+                Law(
+                    o.getString("id"), o.getString("ko"), o.getString("en"), Field.of(o.getString("field")),
+                    o.getString("formula"), o.getString("statement"), o.getString("why"), o.optString("who"),
+                    RefSource(s.optString("title"), s.optString("publisher"), s.optString("url"), s.optString("license")),
+                )
+            }
+        }
+    }
+}
+
 class RefData(val elements: List<Element>, val elementSources: List<RefSource>, val tables: List<DataTable>) {
     val byZ = elements.associateBy { it.z }
     val tableById = tables.associateBy { it.id }

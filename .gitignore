@@ -20,3 +20,4 @@ dist/
 *.jks
 *.keystore
 chrome_profile/
+ios/dist/

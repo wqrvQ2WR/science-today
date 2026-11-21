@@ -99,6 +99,17 @@ fun RefHomeScreen(ref: RefData, nav: Nav) {
             }
         }
         item {
+            val n = Law.get(androidx.compose.ui.platform.LocalContext.current).size
+            Column(
+                Modifier.fillMaxWidth().clip(RoundedCornerShape(28.dp)).background(BrandBrush)
+                    .clickable { nav.laws() }.padding(22.dp),
+                verticalArrangement = Arrangement.spacedBy(6.dp),
+            ) {
+                Text("법칙·원리", color = Color.White, fontSize = 24.sp, fontWeight = FontWeight.ExtraBold)
+                Text("옴, 뉴턴, 멘델, 케플러… 법칙·원리 ${n}개를 식과 함께", color = Color.White.copy(alpha = 0.92f), fontSize = 14.sp)
+            }
+        }
+        item {
             val total = ref.tables.sumOf { it.entries.size }
             SectionTitle("데이터 표 ${ref.tables.size}개 · ${"%,d".format(total)}줄")
         }
@@ -436,6 +447,62 @@ private fun SourceList(sources: List<RefSource>) {
                     Text(listOf(s.publisher, s.license).filter { it.isNotEmpty() }.joinToString(" · "), color = Palette.dim, fontSize = 12.sp)
                 }
             }
+        }
+    }
+}
+
+@Composable
+fun LawsScreen(laws: List<Law>, nav: Nav) {
+    var query by rememberSaveable { mutableStateOf("") }
+    var field by rememberSaveable { mutableStateOf<Field?>(null) }
+    val uri = LocalUriHandler.current
+    val list = laws.filter { l ->
+        (field == null || l.field == field) &&
+            (Hangul.matches(l.ko, query) || Hangul.matches(l.en, query) || Hangul.matches(l.formula, query) || Hangul.matches(l.statement, query))
+    }
+    Column(Modifier.fillMaxSize()) {
+        TopBar("법칙·원리", onBack = nav::back)
+        LazyColumn(
+            Modifier.fillMaxSize().navigationBarsPadding(),
+            contentPadding = PaddingValues(start = 16.dp, end = 16.dp, bottom = 24.dp),
+            verticalArrangement = Gap,
+        ) {
+            item {
+                OutlinedTextField(
+                    value = query, onValueChange = { query = it }, modifier = Modifier.fillMaxWidth(), singleLine = true,
+                    shape = RoundedCornerShape(16.dp),
+                    placeholder = { Text("법칙 찾기 (이름, 영어, 초성)", color = Palette.dim) },
+                    leadingIcon = { Icon(Icons.Filled.Search, null, tint = Palette.dim) },
+                    trailingIcon = { if (query.isNotEmpty()) IconButton(onClick = { query = "" }) { Icon(Icons.Filled.Clear, "지우기", tint = Palette.dim) } },
+                    colors = OutlinedTextFieldDefaults.colors(
+                        focusedContainerColor = Palette.card, unfocusedContainerColor = Palette.card,
+                        focusedBorderColor = Palette.purple, unfocusedBorderColor = Palette.line,
+                    ),
+                )
+            }
+            item { FieldFilter(field) { field = it } }
+            item { Text("${list.size}개", color = Palette.dim, fontSize = 13.sp) }
+            if (list.isEmpty()) item { Text("찾는 법칙이 없어요.", color = Palette.dim, fontSize = 14.sp) }
+            items(list, key = { it.id }) { l ->
+                Card {
+                    Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                        FieldChip(l.field, onColor = false, extra = l.who.ifEmpty { null })
+                        Text(l.ko, color = Palette.ink, fontSize = 18.sp, fontWeight = FontWeight.ExtraBold)
+                        Text(l.en, color = Palette.dim, fontSize = 12.sp)
+                        Text(
+                            l.formula, color = Color.White, fontSize = 16.sp, fontWeight = FontWeight.Bold,
+                            modifier = Modifier.fillMaxWidth().clip(RoundedCornerShape(14.dp)).background(l.field.brush()).padding(12.dp),
+                        )
+                        Text(l.statement, color = Palette.ink, fontSize = 15.sp, lineHeight = 22.sp, fontWeight = FontWeight.Bold)
+                        Text(l.why, color = Palette.dim, fontSize = 14.sp, lineHeight = 21.sp)
+                        Text(
+                            "출처: ${l.source.title}", color = Palette.purple, fontSize = 12.sp, fontWeight = FontWeight.Bold,
+                            modifier = Modifier.clickable { runCatching { uri.openUri(l.source.url) } },
+                        )
+                    }
+                }
+            }
+            item { Text("식과 설명은 교과서 수준의 요약이고, 위 위키백과 문서로 자세한 내용을 확인할 수 있다.", color = Palette.dim, fontSize = 12.sp) }
         }
     }
 }

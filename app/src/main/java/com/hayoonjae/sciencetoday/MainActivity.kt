@@ -37,6 +37,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.graphics.vector.ImageVector
 
 class MainActivity : ComponentActivity() {
@@ -79,6 +80,11 @@ fun RefData.Companion.get(ctx: Context): RefData = cachedRef ?: parse(
     ctx.assets.open("tables.json").bufferedReader().use { it.readText() },
 ).also { cachedRef = it }
 
+private var cachedLaws: List<Law>? = null
+
+fun Law.Companion.get(ctx: Context): List<Law> =
+    cachedLaws ?: parse(ctx.assets.open("laws.json").bufferedReader().use { it.readText() }).also { cachedLaws = it }
+
 enum class QuizMode { DAILY, FACT, FIELD, RANDOM, WRONG }
 
 sealed interface Route {
@@ -86,6 +92,7 @@ sealed interface Route {
     data class TermR(val id: String) : Route
     class QuizR(val session: QuizSession) : Route
     data object PeriodicR : Route
+    data object LawsR : Route
     data class ElementR(val z: Int) : Route
     data class TableR(val id: String) : Route
 }
@@ -98,6 +105,7 @@ class Nav(private val stack: SnapshotStateList<Route>) {
     }
     fun back() { if (stack.isNotEmpty()) stack.removeAt(stack.lastIndex) }
     fun periodic() { stack.add(Route.PeriodicR) }
+    fun laws() { stack.add(Route.LawsR) }
     fun element(z: Int) { stack.add(Route.ElementR(z)) }
     /** 원소 화면에서 이전/다음으로 넘길 때는 뒤로 가기 기록을 쌓지 않는다. */
     fun replaceElement(z: Int) { if (stack.isNotEmpty()) stack[stack.lastIndex] = Route.ElementR(z) }
@@ -134,6 +142,7 @@ fun App(lib: Library, ref: RefData, progress: Progress, openFact: MutableState<S
             is Route.TermR -> lib.termById[top.id]?.let { TermScreen(it, lib, progress, nav) }
             is Route.QuizR -> QuizScreen(top.session, progress, nav)
             Route.PeriodicR -> PeriodicScreen(ref, nav)
+            Route.LawsR -> LawsScreen(Law.get(LocalContext.current), nav)
             is Route.ElementR -> ref.byZ[top.z]?.let { ElementScreen(it, ref, nav) }
             is Route.TableR -> ref.tableById[top.id]?.let { TableScreen(it, nav) }
             null -> Scaffold(

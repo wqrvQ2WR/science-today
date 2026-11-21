@@ -1,0 +1,39 @@
+# iOS 앱 빌드와 시뮬레이터 점검. 맥에 Xcode 가 없어도 여기서 ipa 를 만든다.
+name: ios
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+    paths: ["ios/**", "app/src/main/assets/**", "app/src/main/res/font/**", ".github/workflows/ios.yml"]
+
+jobs:
+  build:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v4
+      - name: 시뮬레이터용 빌드
+        run: ./ios/build.sh sim
+      - name: 기기용 ipa
+        run: ./ios/build.sh device
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ipa
+          path: ios/dist/ScienceToday-ios.ipa
+      - name: 시뮬레이터에서 띄워 보기
+        run: |
+          UDID=$(xcrun simctl create t "iPhone 16" | tail -1)
+          xcrun simctl boot $UDID && xcrun simctl bootstatus $UDID -b
+          xcrun simctl install $UDID ios/dist/sim/Payload/ScienceToday.app
+          mkdir -p shots
+          i=0
+          for a in "--tab 0" "--tab 1" "--tab 2" "--tab 3" "--tab 4" "--open fact" "--open laws" "--open periodic" "--open quiz"; do
+            i=$((i+1))
+            xcrun simctl launch $UDID com.hayoonjae.sciencetoday $a
+            sleep 4; xcrun simctl io $UDID screenshot shots/$i.png
+            xcrun simctl terminate $UDID com.hayoonjae.sciencetoday
+          done
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: shots
+          path: shots/

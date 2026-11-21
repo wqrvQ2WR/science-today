@@ -1,0 +1,1076 @@
+{
+ "laws": [
+  {
+   "id": "newton1",
+   "ko": "뉴턴의 운동 제1법칙 (관성의 법칙)",
+   "en": "Newton's first law",
+   "field": "phys",
+   "formula": "합력 = 0 이면 v = 일정",
+   "statement": "물체에 작용하는 힘의 합이 0이면 정지한 물체는 계속 정지해 있고, 움직이던 물체는 같은 속도로 직선 운동을 계속한다.",
+   "why": "물체는 자신의 운동 상태를 바꾸는 것을 거부하는 성질(관성)이 있다. 급정거할 때 몸이 앞으로 쏠리는 이유다.",
+   "who": "아이작 뉴턴, 1687",
+   "source": {
+    "title": "Wikipedia: Newton's laws of motion",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "newton2",
+   "ko": "뉴턴의 운동 제2법칙 (가속도의 법칙)",
+   "en": "Newton's second law",
+   "field": "phys",
+   "formula": "F = ma",
+   "statement": "물체의 가속도는 작용하는 합력에 비례하고 질량에 반비례하며, 방향은 합력과 같다.",
+   "why": "같은 힘으로 밀어도 질량이 클수록 속도가 천천히 변한다. 로켓, 자동차, 놀이기구의 운동을 계산하는 기본 식이다.",
+   "who": "아이작 뉴턴, 1687",
+   "source": {
+    "title": "Wikipedia: Newton's laws of motion",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "newton3",
+   "ko": "뉴턴의 운동 제3법칙 (작용 반작용)",
+   "en": "Newton's third law",
+   "field": "phys",
+   "formula": "F(A→B) = −F(B→A)",
+   "statement": "한 물체가 다른 물체에 힘을 주면, 크기가 같고 방향이 반대인 힘을 되돌려 받는다.",
+   "why": "두 힘은 서로 다른 물체에 작용하므로 상쇄되지 않는다. 로켓이 가스를 뒤로 내뿜어 앞으로 나아가는 원리다.",
+   "who": "아이작 뉴턴, 1687",
+   "source": {
+    "title": "Wikipedia: Newton's laws of motion",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "gravitation",
+   "ko": "만유인력의 법칙",
+   "en": "Newton's law of universal gravitation",
+   "field": "phys",
+   "formula": "F = G·m₁m₂ / r²",
+   "statement": "질량을 가진 두 물체는 서로 끌어당기며, 그 힘은 질량의 곱에 비례하고 거리의 제곱에 반비례한다.",
+   "why": "사과가 떨어지는 힘과 달이 지구를 도는 힘이 같은 종류임을 보였다. 거리가 두 배가 되면 힘은 4분의 1이 된다.",
+   "who": "아이작 뉴턴, 1687",
+   "source": {
+    "title": "Wikipedia: Newton's law of universal gravitation",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "hooke",
+   "ko": "훅의 법칙",
+   "en": "Hooke's law",
+   "field": "phys",
+   "formula": "F = −kx",
+   "statement": "탄성 한계 안에서 용수철을 늘이거나 줄이는 길이는 가해진 힘에 비례한다.",
+   "why": "k(용수철 상수)가 클수록 딱딱한 용수철이다. 저울, 자동차 서스펜션, 볼펜 용수철에 쓰인다.",
+   "who": "로버트 훅, 1678",
+   "source": {
+    "title": "Wikipedia: Hooke's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hooke%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "momentum",
+   "ko": "운동량 보존 법칙",
+   "en": "Conservation of momentum",
+   "field": "phys",
+   "formula": "m₁v₁ + m₂v₂ = 일정",
+   "statement": "바깥에서 힘이 작용하지 않는 계의 전체 운동량은 변하지 않는다.",
+   "why": "충돌 전후의 운동량 합이 같다. 당구공 충돌과 로켓 추진을 설명한다.",
+   "who": "",
+   "source": {
+    "title": "Wikipedia: Momentum",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Momentum",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "energy",
+   "ko": "에너지 보존 법칙",
+   "en": "Conservation of energy",
+   "field": "phys",
+   "formula": "E(전체) = 일정",
+   "statement": "고립된 계의 에너지 총량은 형태만 바뀔 뿐 새로 생기거나 사라지지 않는다.",
+   "why": "높은 곳의 위치 에너지가 떨어지며 운동 에너지로 바뀌는 식으로 형태가 옮겨 간다. 영구 기관이 불가능한 이유다.",
+   "who": "",
+   "source": {
+    "title": "Wikipedia: Conservation of energy",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Conservation_of_energy",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "ohm",
+   "ko": "옴의 법칙",
+   "en": "Ohm's law",
+   "field": "phys",
+   "formula": "V = IR",
+   "statement": "도체에 흐르는 전류는 걸어 준 전압에 비례하고 저항에 반비례한다.",
+   "why": "같은 전압에서 저항이 클수록 전류가 적게 흐른다. 회로 설계의 기본이며, 모든 물질이 따르는 것은 아니다.",
+   "who": "게오르크 옴, 1827",
+   "source": {
+    "title": "Wikipedia: Ohm's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ohm%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "kcl",
+   "ko": "키르히호프의 전류 법칙",
+   "en": "Kirchhoff's current law",
+   "field": "phys",
+   "formula": "ΣI(들어옴) = ΣI(나감)",
+   "statement": "회로의 한 접점으로 들어오는 전류의 합은 나가는 전류의 합과 같다.",
+   "why": "전하가 접점에 쌓이거나 사라지지 않는다는 전하 보존의 결과다. 병렬 회로의 전류 분배를 계산할 때 쓴다.",
+   "who": "구스타프 키르히호프, 1845",
+   "source": {
+    "title": "Wikipedia: Kirchhoff's circuit laws",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kirchhoff%27s_circuit_laws",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "kvl",
+   "ko": "키르히호프의 전압 법칙",
+   "en": "Kirchhoff's voltage law",
+   "field": "phys",
+   "formula": "ΣV(닫힌 회로) = 0",
+   "statement": "닫힌 회로를 한 바퀴 돌 때 전압 상승의 합과 전압 강하의 합은 같다.",
+   "why": "회로 안의 전기장이 보존장(자기장이 변하지 않는 경우)이라서 성립한다. 한 바퀴 돌아 제자리로 오면 전위가 같으므로 상승과 강하가 상쇄된다. 직렬 회로에서 전원 전압이 저항들에 나뉘어 걸리는 모습을 설명한다.",
+   "who": "구스타프 키르히호프, 1845",
+   "source": {
+    "title": "Wikipedia: Kirchhoff's circuit laws",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kirchhoff%27s_circuit_laws",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "joule",
+   "ko": "줄의 법칙",
+   "en": "Joule heating",
+   "field": "phys",
+   "formula": "Q = I²Rt",
+   "statement": "저항에 전류가 흐를 때 생기는 열은 전류의 제곱, 저항, 시간에 비례한다.",
+   "why": "전기난로, 전기 주전자, 퓨즈가 열을 내는 원리다. 송전선에서 열로 새는 손실을 줄이려고 고전압으로 보낸다.",
+   "who": "제임스 줄, 1840",
+   "source": {
+    "title": "Wikipedia: Joule heating",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Joule_heating",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "coulomb",
+   "ko": "쿨롱의 법칙",
+   "en": "Coulomb's law",
+   "field": "phys",
+   "formula": "F = k·q₁q₂ / r²",
+   "statement": "두 전하 사이의 힘은 전하량의 곱에 비례하고 거리의 제곱에 반비례한다. 같은 부호는 밀고 다른 부호는 당긴다.",
+   "why": "만유인력과 식 모양이 같지만 밀어내는 힘도 있다는 점이 다르다. 정전기와 원자 속 전자의 결합을 설명한다.",
+   "who": "샤를 드 쿨롱, 1785",
+   "source": {
+    "title": "Wikipedia: Coulomb's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Coulomb%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "gauss",
+   "ko": "가우스 법칙",
+   "en": "Gauss's law",
+   "field": "phys",
+   "formula": "∮E·dA = Q / ε₀",
+   "statement": "닫힌 면을 지나는 전기장의 총량은 그 안에 든 전하량에 비례한다.",
+   "why": "대칭이 좋은 전하 분포의 전기장을 쉽게 구하게 해 준다. 맥스웰 방정식 네 개 중 하나다.",
+   "who": "카를 프리드리히 가우스, 1835 무렵",
+   "source": {
+    "title": "Wikipedia: Gauss's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gauss%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "ampere",
+   "ko": "앙페르 법칙",
+   "en": "Ampère's circuital law",
+   "field": "phys",
+   "formula": "∮B·dl = μ₀I",
+   "statement": "전류가 일정할 때, 전류가 흐르면 그 둘레에 자기장이 생기고 닫힌 경로를 따라 모은 자기장의 합은 그 경로를 지나는 전류에 비례한다. 변하는 전기장까지 다루려면 맥스웰이 더한 변위 전류 항이 필요하다.",
+   "why": "직선 도선과 솔레노이드 둘레의 자기장을 계산할 때 쓴다. 전류가 자기장을 만든다는 사실을 식으로 나타냈다.",
+   "who": "앙드레마리 앙페르, 맥스웰이 1860년대에 보완",
+   "source": {
+    "title": "Wikipedia: Ampère's circuital law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Amp%C3%A8re%27s_circuital_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "faraday",
+   "ko": "패러데이의 전자기 유도 법칙",
+   "en": "Faraday's law of induction",
+   "field": "phys",
+   "formula": "ε = −dΦ/dt",
+   "statement": "회로를 지나는 자기 선속이 변하면 그 변화 속도에 비례하는 기전력이 생긴다.",
+   "why": "자석을 코일 안에서 움직이면 전류가 흐른다. 발전기와 변압기가 이 원리로 돈다.",
+   "who": "마이클 패러데이, 1831",
+   "source": {
+    "title": "Wikipedia: Faraday's law of induction",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Faraday%27s_law_of_induction",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "lenz",
+   "ko": "렌츠의 법칙",
+   "en": "Lenz's law",
+   "field": "phys",
+   "formula": "유도 전류 방향: 자속 변화를 방해",
+   "statement": "유도 전류는 자신을 만든 자속의 변화를 방해하는 방향으로 흐른다.",
+   "why": "에너지 보존과 이어진다. 자석을 금속 관에 떨어뜨리면 천천히 떨어지는 현상을 설명한다.",
+   "who": "하인리히 렌츠, 1834",
+   "source": {
+    "title": "Wikipedia: Lenz's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lenz%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "snell",
+   "ko": "스넬의 법칙 (굴절의 법칙)",
+   "en": "Snell's law",
+   "field": "phys",
+   "formula": "n₁ sinθ₁ = n₂ sinθ₂",
+   "statement": "빛이 다른 매질로 들어갈 때 입사각과 굴절각의 사인 값의 비는 두 매질의 굴절률의 비로 일정하다.",
+   "why": "물속 젓가락이 꺾여 보이고 렌즈가 빛을 모으는 이유다. 광섬유의 전반사도 이 식에서 나온다.",
+   "who": "이븐 사흘 984, 스넬 1621, 데카르트 1637 출간",
+   "source": {
+    "title": "Wikipedia: Snell's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Snell%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "pascal",
+   "ko": "파스칼의 원리",
+   "en": "Pascal's law",
+   "field": "phys",
+   "formula": "P = F/A, 압력이 그대로 전달",
+   "statement": "밀폐된 유체의 한 곳에 가한 압력은 유체의 모든 곳에 같은 크기로 전달된다.",
+   "why": "작은 피스톤에 가한 힘이 면적이 넓은 피스톤에서 커진다. 유압 잭과 자동차 브레이크가 이 원리다.",
+   "who": "블레즈 파스칼, 1653년 정립(1663년 출간)",
+   "source": {
+    "title": "Wikipedia: Pascal's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pascal%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "archimedes",
+   "ko": "아르키메데스의 원리",
+   "en": "Archimedes' principle",
+   "field": "phys",
+   "formula": "부력 = ρ(유체)·V(잠긴 부피)·g",
+   "statement": "유체에 잠긴 물체는 밀어낸 유체의 무게만큼 위로 뜨는 힘(부력)을 받는다.",
+   "why": "배가 물에 뜨는 것은 밀어낸 물의 무게가 배의 무게와 같아지기 때문이다. 밀도로 뜨고 가라앉음을 가를 수 있다.",
+   "who": "아르키메데스, 고대 그리스",
+   "source": {
+    "title": "Wikipedia: Archimedes' principle",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Archimedes%27_principle",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "bernoulli",
+   "ko": "베르누이의 원리",
+   "en": "Bernoulli's principle",
+   "field": "phys",
+   "formula": "P + ½ρv² + ρgh = 일정",
+   "statement": "마찰이 없고 압축되지 않는 유체가 정상적으로 흐를 때, 같은 유선을 따라 속도가 빠른 곳은 압력이 낮다.",
+   "why": "속도, 압력, 높이 사이의 에너지 균형을 나타낸다. 좁은 관에서 압력이 떨어지는 벤투리관의 원리다. 날개 위쪽 공기가 더 빨리 가야 해서 양력이 생긴다는 흔한 설명은 잘못된 통설이다.",
+   "who": "다니엘 베르누이, 1738",
+   "source": {
+    "title": "Wikipedia: Bernoulli's principle",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bernoulli%27s_principle",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "thermo0",
+   "ko": "열역학 제0법칙",
+   "en": "Zeroth law of thermodynamics",
+   "field": "phys",
+   "formula": "A~B, B~C 이면 A~C",
+   "statement": "물체 A와 B가 각각 C와 열평형이면 A와 B도 서로 열평형이다.",
+   "why": "온도라는 양이 의미를 갖는 근거다. 온도계로 온도를 비교할 수 있는 이유다.",
+   "who": "",
+   "source": {
+    "title": "Wikipedia: Zeroth law of thermodynamics",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Zeroth_law_of_thermodynamics",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "thermo1",
+   "ko": "열역학 제1법칙",
+   "en": "First law of thermodynamics",
+   "field": "phys",
+   "formula": "ΔU = Q − W",
+   "statement": "계의 내부 에너지 변화는 계에 들어온 열에서 계가 한 일을 뺀 값과 같다.",
+   "why": "에너지 보존을 열까지 넓힌 것이다. 엔진은 열을 일로 바꾸되 에너지를 새로 만들지는 못한다.",
+   "who": "",
+   "source": {
+    "title": "Wikipedia: First law of thermodynamics",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/First_law_of_thermodynamics",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "thermo2",
+   "ko": "열역학 제2법칙",
+   "en": "Second law of thermodynamics",
+   "field": "phys",
+   "formula": "ΔS(고립계) ≥ 0",
+   "statement": "고립된 계의 엔트로피는 줄어들지 않는다. 열은 저절로 차가운 곳에서 뜨거운 곳으로 흐르지 않는다.",
+   "why": "뜨거운 커피는 식지만 식은 커피가 저절로 데워지지 않는 이유다. 열기관 효율에 한계가 있음을 보인다.",
+   "who": "",
+   "source": {
+    "title": "Wikipedia: Second law of thermodynamics",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Second_law_of_thermodynamics",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "thermo3",
+   "ko": "열역학 제3법칙",
+   "en": "Third law of thermodynamics",
+   "field": "phys",
+   "formula": "T → 0 K 이면 S → 최솟값",
+   "statement": "절대 영도에 가까워질수록 완전한 결정의 엔트로피는 일정한 최솟값에 가까워지며, 유한한 단계로 절대 영도에 이를 수 없다.",
+   "why": "절대 영도는 한없이 가까이 갈 수는 있어도 도달할 수는 없다는 뜻이다.",
+   "who": "발터 네른스트, 1906",
+   "source": {
+    "title": "Wikipedia: Third law of thermodynamics",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Third_law_of_thermodynamics",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "fourier",
+   "ko": "푸리에의 열전도 법칙",
+   "en": "Thermal conduction",
+   "field": "phys",
+   "formula": "q = −k·∇T",
+   "statement": "열은 온도가 높은 곳에서 낮은 곳으로 흐르고, 흐르는 양은 온도 기울기와 열전도율에 비례한다.",
+   "why": "금속 숟가락이 나무 숟가락보다 빨리 뜨거워지는 이유(열전도율 차이). 단열재 두께를 정할 때 쓴다.",
+   "who": "조제프 푸리에",
+   "source": {
+    "title": "Wikipedia: Thermal conduction",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Thermal_conduction",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "cooling",
+   "ko": "뉴턴의 냉각 법칙",
+   "en": "Newton's law of cooling",
+   "field": "phys",
+   "formula": "dT/dt = −k(T − T주변)",
+   "statement": "물체가 식는 속도는 물체와 주변의 온도 차에 비례한다.",
+   "why": "뜨거운 물은 처음에 빨리 식다가 점점 천천히 식는다. 가까운 온도 범위에서 좋은 근사다.",
+   "who": "아이작 뉴턴, 1701",
+   "source": {
+    "title": "Wikipedia: Newton's law of cooling",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_cooling",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "stefan",
+   "ko": "스테판-볼츠만 법칙",
+   "en": "Stefan–Boltzmann law",
+   "field": "phys",
+   "formula": "P = σAT⁴",
+   "statement": "흑체가 내보내는 복사 에너지는 절대 온도의 네제곱에 비례한다.",
+   "why": "온도가 두 배가 되면 복사 에너지는 16배가 된다. 별의 밝기와 크기를 계산할 때 쓴다.",
+   "who": "요제프 슈테판 1879, 루트비히 볼츠만 1884",
+   "source": {
+    "title": "Wikipedia: Stefan–Boltzmann law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "wien",
+   "ko": "빈의 변위 법칙",
+   "en": "Wien's displacement law",
+   "field": "phys",
+   "formula": "λ(최대) = b / T",
+   "statement": "흑체가 가장 세게 내는 빛의 파장은 절대 온도에 반비례한다.",
+   "why": "뜨거운 쇠가 붉은색에서 주황, 흰색으로 변하는 이유다. 별의 색으로 표면 온도를 잰다.",
+   "who": "빌헬름 빈, 1893",
+   "source": {
+    "title": "Wikipedia: Wien's displacement law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "emc2",
+   "ko": "질량-에너지 등가",
+   "en": "Mass–energy equivalence",
+   "field": "phys",
+   "formula": "E = mc²",
+   "statement": "질량과 에너지는 서로 바뀔 수 있으며, 질량 m에는 mc²의 에너지가 대응한다.",
+   "why": "핵반응에서 줄어든 질량이 큰 에너지로 나오는 이유다. 태양이 빛나는 힘의 근원을 설명한다.",
+   "who": "알베르트 아인슈타인, 1905",
+   "source": {
+    "title": "Wikipedia: Mass–energy equivalence",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mass%E2%80%93energy_equivalence",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "uncertainty",
+   "ko": "불확정성 원리",
+   "en": "Uncertainty principle",
+   "field": "phys",
+   "formula": "Δx·Δp ≥ ħ/2",
+   "statement": "입자의 위치와 운동량을 동시에 아무리 정확하게 알 수는 없다. 한쪽을 정확히 알수록 다른 쪽이 흐려진다.",
+   "why": "측정 기술의 문제가 아니라 자연의 성질이다. 원자 속 전자가 핵에 떨어지지 않는 것과도 관련된다.",
+   "who": "베르너 하이젠베르크, 1927",
+   "source": {
+    "title": "Wikipedia: Uncertainty principle",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Uncertainty_principle",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "kepler1",
+   "ko": "케플러 제1법칙 (타원 궤도)",
+   "en": "Kepler's laws of planetary motion",
+   "field": "space",
+   "formula": "궤도 = 타원, 태양은 한 초점",
+   "statement": "행성은 태양을 한 초점으로 하는 타원 궤도를 돈다.",
+   "why": "원이 아니라 타원이라서 태양에 가까운 때와 먼 때가 있다. 지구의 궤도는 원에 매우 가깝다.",
+   "who": "요하네스 케플러, 1609",
+   "source": {
+    "title": "Wikipedia: Kepler's laws of planetary motion",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "kepler2",
+   "ko": "케플러 제2법칙 (면적 속도 일정)",
+   "en": "Kepler's laws of planetary motion",
+   "field": "space",
+   "formula": "dA/dt = 일정",
+   "statement": "행성과 태양을 잇는 선이 같은 시간 동안 쓸고 지나가는 넓이는 같다.",
+   "why": "태양에 가까울 때 행성이 더 빨리 움직인다. 각운동량 보존의 결과다.",
+   "who": "요하네스 케플러, 1609~1621",
+   "source": {
+    "title": "Wikipedia: Kepler's laws of planetary motion",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "kepler3",
+   "ko": "케플러 제3법칙 (조화의 법칙)",
+   "en": "Kepler's laws of planetary motion",
+   "field": "space",
+   "formula": "T² ∝ a³",
+   "statement": "행성의 공전 주기의 제곱은 궤도 긴반지름의 세제곱에 비례한다.",
+   "why": "태양에서 먼 행성일수록 공전 주기가 길다. 위성의 궤도 계산에도 쓴다.",
+   "who": "요하네스 케플러, 1619",
+   "source": {
+    "title": "Wikipedia: Kepler's laws of planetary motion",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "hubble",
+   "ko": "허블의 법칙",
+   "en": "Hubble's law",
+   "field": "space",
+   "formula": "v = H₀d",
+   "statement": "멀리 있는 은하일수록 더 빠른 속도로 우리에게서 멀어진다.",
+   "why": "우주가 팽창하고 있다는 관측 증거다. 은하의 후퇴 속도와 거리가 비례한다.",
+   "who": "에드윈 허블 1929 (조르주 르메트르가 1927년 먼저 발표)",
+   "source": {
+    "title": "Wikipedia: Hubble's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hubble%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "titius",
+   "ko": "티티우스-보데 법칙",
+   "en": "Titius–Bode law",
+   "field": "space",
+   "formula": "a = 0.4 + 0.3×2ⁿ (AU), n = −∞, 0, 1, 2 …",
+   "statement": "태양계 행성의 궤도 반지름이 간단한 수열에 대충 들어맞는다는 경험칙이다.",
+   "why": "천왕성 발견 이후 널리 알려졌지만 해왕성에는 맞지 않아, 진짜 물리 법칙이 아니라 우연에 가깝다고 본다.",
+   "who": "요한 티티우스 1766, 요한 보데 1772",
+   "source": {
+    "title": "Wikipedia: Titius–Bode law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Titius%E2%80%93Bode_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "lavoisier",
+   "ko": "질량 보존의 법칙",
+   "en": "Conservation of mass",
+   "field": "chem",
+   "formula": "반응 전 질량 = 반응 후 질량",
+   "statement": "닫힌계(물질이 드나들지 않는 계)에서 화학 반응이 일어나도 반응물의 전체 질량과 생성물의 전체 질량은 같다.",
+   "why": "원자의 종류와 수가 그대로이고 짝짓기만 바뀌기 때문이다. 밀폐 용기에서 반응시키면 확인할 수 있다.",
+   "who": "앙투안 라부아지에, 1773 무렵 (로모노소프가 1756년에 먼저 주장)",
+   "source": {
+    "title": "Wikipedia: Conservation of mass",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Conservation_of_mass",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "proust",
+   "ko": "일정 성분비의 법칙",
+   "en": "Law of definite proportions",
+   "field": "chem",
+   "formula": "물 = 수소 : 산소 = 1 : 8 (질량비)",
+   "statement": "한 화합물을 이루는 성분 원소의 질량비는 언제나 일정하다.",
+   "why": "화합물은 원자가 일정한 개수비로 결합한 것이기 때문이다. 물은 어디서 얻어도 수소와 산소의 질량비가 같다.",
+   "who": "조제프 프루스트, 1797",
+   "source": {
+    "title": "Wikipedia: Law of definite proportions",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Law_of_definite_proportions",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "multiple",
+   "ko": "배수 비례의 법칙",
+   "en": "Law of multiple proportions",
+   "field": "chem",
+   "formula": "CO : CO₂ 에서 산소 질량비 = 1 : 2",
+   "statement": "두 원소가 여러 종류의 화합물을 만들 때, 한 원소의 질량이 같은 상태에서 다른 원소의 질량은 간단한 정수비를 이룬다.",
+   "why": "원자가 쪼개지지 않는 알갱이라는 돌턴의 원자설을 뒷받침했다.",
+   "who": "존 돌턴, 1804 무렵 (1807년 톰슨이 발표)",
+   "source": {
+    "title": "Wikipedia: Law of multiple proportions",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Law_of_multiple_proportions",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "avogadro",
+   "ko": "아보가드로의 법칙",
+   "en": "Avogadro's law",
+   "field": "chem",
+   "formula": "V ∝ n (같은 T, P)",
+   "statement": "같은 온도와 압력에서 같은 부피의 기체에는 기체의 종류와 상관없이 같은 수의 분자가 들어 있다.",
+   "why": "기체 반응의 부피비가 분자 수의 비와 같은 이유다. 몰 개념의 바탕이다.",
+   "who": "아메데오 아보가드로, 1811",
+   "source": {
+    "title": "Wikipedia: Avogadro's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Avogadro%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "boyle",
+   "ko": "보일의 법칙",
+   "en": "Boyle's law",
+   "field": "chem",
+   "formula": "PV = 일정 (T, n 일정)",
+   "statement": "온도가 일정할 때 일정량의 기체의 부피는 압력에 반비례한다.",
+   "why": "주사기 끝을 막고 누르면 부피가 줄며 압력이 커진다. 숨 쉴 때 가슴 부피가 바뀌어 공기가 드나드는 것도 같은 원리다.",
+   "who": "로버트 보일, 1662",
+   "source": {
+    "title": "Wikipedia: Boyle's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Boyle%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "charles",
+   "ko": "샤를의 법칙",
+   "en": "Charles's law",
+   "field": "chem",
+   "formula": "V / T = 일정 (P, n 일정)",
+   "statement": "압력이 일정할 때 일정량의 기체의 부피는 절대 온도에 비례한다.",
+   "why": "풍선을 차가운 곳에 두면 쪼그라드는 이유다. 온도는 반드시 켈빈으로 계산한다.",
+   "who": "자크 샤를 (1787 무렵), 게이뤼삭이 1802년 발표",
+   "source": {
+    "title": "Wikipedia: Charles's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Charles%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "ideal",
+   "ko": "이상 기체 상태 방정식",
+   "en": "Ideal gas law",
+   "field": "chem",
+   "formula": "PV = nRT",
+   "statement": "이상 기체의 압력, 부피, 물질량, 절대 온도 사이에는 PV = nRT 관계가 있다.",
+   "why": "보일, 샤를, 아보가드로의 법칙을 하나로 합친 식이다. 압력이 너무 높거나 온도가 너무 낮으면 실제 기체와 어긋난다.",
+   "who": "에밀 클라페롱, 1834",
+   "source": {
+    "title": "Wikipedia: Ideal gas law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ideal_gas_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "dalton",
+   "ko": "돌턴의 분압 법칙",
+   "en": "Dalton's law",
+   "field": "chem",
+   "formula": "P(전체) = P₁ + P₂ + ⋯",
+   "statement": "섞인 기체의 전체 압력은 각 성분 기체가 혼자 있을 때의 압력(분압)을 더한 값과 같다.",
+   "why": "공기 압력은 질소, 산소 등의 분압의 합이다. 잠수부가 마시는 기체 혼합비를 정할 때 쓴다.",
+   "who": "존 돌턴, 1801",
+   "source": {
+    "title": "Wikipedia: Dalton's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dalton%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "henry",
+   "ko": "헨리의 법칙",
+   "en": "Henry's law",
+   "field": "chem",
+   "formula": "C = kP",
+   "statement": "일정한 온도에서 액체에 녹는 기체의 양은 그 기체의 압력에 비례한다.",
+   "why": "탄산음료 뚜껑을 열면 압력이 내려가 이산화탄소가 거품으로 나온다. 잠수병도 이 원리로 설명한다.",
+   "who": "윌리엄 헨리, 1803",
+   "source": {
+    "title": "Wikipedia: Henry's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Henry%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "raoult",
+   "ko": "라울의 법칙",
+   "en": "Raoult's law",
+   "field": "chem",
+   "formula": "P(용액) = x(용매)·P°(용매)",
+   "statement": "용액 위의 용매 증기압은 순수한 용매의 증기압에 용매의 몰분율을 곱한 값이다.",
+   "why": "물에 소금을 녹이면 증기압이 낮아져 끓는점이 오르고 어는점이 내려간다. 겨울철 제설용 염화칼슘의 원리다.",
+   "who": "프랑수아마리 라울, 1887",
+   "source": {
+    "title": "Wikipedia: Raoult's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Raoult%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "graham",
+   "ko": "그레이엄의 법칙",
+   "en": "Graham's law",
+   "field": "chem",
+   "formula": "v₁ / v₂ = √(M₂ / M₁)",
+   "statement": "기체가 퍼져 나가는(확산) 속도는 분자량의 제곱근에 반비례한다.",
+   "why": "가벼운 기체일수록 빨리 퍼진다. 헬륨 풍선이 공기 풍선보다 먼저 쭈그러드는 이유 중 하나다.",
+   "who": "토머스 그레이엄, 1848",
+   "source": {
+    "title": "Wikipedia: Graham's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Graham%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "lechatelier",
+   "ko": "르샤틀리에의 원리",
+   "en": "Le Chatelier's principle",
+   "field": "chem",
+   "formula": "평형이 변화를 줄이는 쪽으로 이동",
+   "statement": "평형 상태의 계에 농도, 압력, 온도를 바꾸면 그 변화를 줄이는 방향으로 평형이 이동한다.",
+   "why": "암모니아를 만드는 하버-보슈 공정에서 압력과 온도를 정하는 데 쓰인다.",
+   "who": "앙리 르샤틀리에, 1884",
+   "source": {
+    "title": "Wikipedia: Le Chatelier's principle",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Le_Chatelier%27s_principle",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "hess",
+   "ko": "헤스의 법칙",
+   "en": "Hess's law",
+   "field": "chem",
+   "formula": "ΔH(전체) = ΣΔH(단계)",
+   "statement": "화학 반응의 엔탈피 변화는 반응이 거치는 경로와 상관없이 처음과 나중 상태로만 정해진다.",
+   "why": "직접 재기 어려운 반응열을 다른 반응들의 합으로 계산할 수 있게 해 준다.",
+   "who": "제르맹 헤스, 1840",
+   "source": {
+    "title": "Wikipedia: Hess's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hess%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "beer",
+   "ko": "베르-람베르트 법칙",
+   "en": "Beer–Lambert law",
+   "field": "chem",
+   "formula": "A = εlc",
+   "statement": "용액이 빛을 흡수하는 정도는 용액의 농도와 빛이 지나는 길이에 비례한다.",
+   "why": "분광 광도계로 용액의 농도를 재는 데 쓴다. 색이 진할수록 농도가 높다는 직관을 식으로 만든 것이다.",
+   "who": "피에르 부게르, 요한 람베르트, 아우구스트 베르",
+   "source": {
+    "title": "Wikipedia: Beer–Lambert law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Beer%E2%80%93Lambert_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "faradayelec",
+   "ko": "패러데이의 전기 분해 법칙",
+   "en": "Faraday's laws of electrolysis",
+   "field": "chem",
+   "formula": "m = (Q / F)·(M / z)",
+   "statement": "전기 분해로 석출되는 물질의 질량은 흘려 준 전하량에 비례한다.",
+   "why": "도금과 알루미늄 제련에 쓰인다. 전자 한 몰의 전하(패러데이 상수)로 석출량을 계산한다.",
+   "who": "마이클 패러데이, 1833",
+   "source": {
+    "title": "Wikipedia: Faraday's laws of electrolysis",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Faraday%27s_laws_of_electrolysis",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "pauli",
+   "ko": "파울리 배타 원리",
+   "en": "Pauli exclusion principle",
+   "field": "chem",
+   "formula": "같은 양자 상태에 전자 둘 불가",
+   "statement": "한 원자 안에서 두 전자가 네 가지 양자수를 모두 똑같이 가질 수 없다.",
+   "why": "한 오비탈에는 스핀이 반대인 전자가 최대 둘만 들어간다. 주기율표의 주기 구조가 여기서 나온다.",
+   "who": "볼프강 파울리, 1925",
+   "source": {
+    "title": "Wikipedia: Pauli exclusion principle",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pauli_exclusion_principle",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "hund",
+   "ko": "훈트 규칙",
+   "en": "Hund's rules",
+   "field": "chem",
+   "formula": "같은 에너지 오비탈은 먼저 하나씩",
+   "statement": "에너지가 같은 오비탈이 여럿이면 전자는 스핀 방향을 같게 하여 각 오비탈에 하나씩 먼저 들어간다.",
+   "why": "스핀이 같은 전자가 따로 들어가면 핵의 전하가 덜 가려져 핵에 더 강하게 끌리기 때문이다(예전에는 전자끼리의 반발이 줄어서라고 설명했다). 산소가 자석에 끌리는 성질을 설명한다.",
+   "who": "프리드리히 훈트, 1920년대",
+   "source": {
+    "title": "Wikipedia: Hund's rules",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hund%27s_rules",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "mendel1",
+   "ko": "멘델의 우열의 법칙",
+   "en": "Mendelian inheritance",
+   "field": "bio",
+   "formula": "AA × aa → 모두 Aa (우성 형질)",
+   "statement": "서로 다른 순종 형질을 교배하면 잡종 제1대에는 우성 형질만 나타난다.",
+   "why": "대립 유전자 가운데 우성이 드러난다. 둥근 완두와 주름진 완두를 교배하면 모두 둥근 완두가 나온다.",
+   "who": "그레고어 멘델, 1865",
+   "source": {
+    "title": "Wikipedia: Mendelian inheritance",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mendelian_inheritance",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "mendel2",
+   "ko": "멘델의 분리의 법칙",
+   "en": "Mendelian inheritance",
+   "field": "bio",
+   "formula": "Aa × Aa → AA : Aa : aa = 1 : 2 : 1",
+   "statement": "생식 세포가 만들어질 때 한 쌍의 대립 유전자는 서로 갈라져 각각 다른 생식 세포로 들어간다.",
+   "why": "잡종 제2대에서 우성과 열성이 약 3 : 1로 나타나는 이유다.",
+   "who": "그레고어 멘델, 1865",
+   "source": {
+    "title": "Wikipedia: Mendelian inheritance",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mendelian_inheritance",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "mendel3",
+   "ko": "멘델의 독립의 법칙",
+   "en": "Mendelian inheritance",
+   "field": "bio",
+   "formula": "두 형질이 서로 따로 유전",
+   "statement": "서로 다른 염색체에 있는 두 형질의 유전자는 서로 영향 없이 따로 유전된다.",
+   "why": "같은 염색체에 가까이 붙어 있는 유전자(연관)에는 들어맞지 않는다.",
+   "who": "그레고어 멘델, 1865",
+   "source": {
+    "title": "Wikipedia: Mendelian inheritance",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mendelian_inheritance",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "hardy",
+   "ko": "하디-바인베르크 법칙",
+   "en": "Hardy–Weinberg principle",
+   "field": "bio",
+   "formula": "p² + 2pq + q² = 1",
+   "statement": "자연선택, 돌연변이, 이주, 우연이 없고 무작위로 짝짓는 큰 집단에서는 세대가 지나도 대립 유전자 빈도가 변하지 않는다.",
+   "why": "이 조건이 깨질 때 집단이 진화한다고 본다. 유전병 보인자 비율을 추정하는 데 쓴다.",
+   "who": "고드프리 하디, 빌헬름 바인베르크, 1908",
+   "source": {
+    "title": "Wikipedia: Hardy–Weinberg principle",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hardy%E2%80%93Weinberg_principle",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "bergmann",
+   "ko": "베르그만의 법칙",
+   "en": "Bergmann's rule",
+   "field": "bio",
+   "formula": "추운 곳일수록 몸집이 큼",
+   "statement": "같은 종이나 가까운 종 가운데 추운 지방에 사는 개체가 더 큰 경향이 있다.",
+   "why": "몸집이 크면 부피에 비해 표면적이 작아 체온을 덜 빼앗긴다. 북극곰이 열대의 곰보다 큰 이유로 든다.",
+   "who": "카를 베르그만, 1847",
+   "source": {
+    "title": "Wikipedia: Bergmann's rule",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bergmann%27s_rule",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "allen",
+   "ko": "앨런의 법칙",
+   "en": "Allen's rule",
+   "field": "bio",
+   "formula": "추운 곳일수록 몸 끝이 짧음",
+   "statement": "추운 지방의 동물은 귀, 꼬리, 다리 같은 몸 끝부분이 더운 지방 동물보다 짧은 경향이 있다.",
+   "why": "튀어나온 부분이 작으면 열이 덜 빠진다. 북극여우의 귀가 사막여우보다 작다.",
+   "who": "조얼 앨런, 1877",
+   "source": {
+    "title": "Wikipedia: Allen's rule",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Allen%27s_rule",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "kleiber",
+   "ko": "클라이버의 법칙",
+   "en": "Kleiber's law",
+   "field": "bio",
+   "formula": "대사율 ∝ 질량^(3/4)",
+   "statement": "동물의 기초 대사율은 몸무게의 3/4제곱에 비례한다.",
+   "why": "몸집이 클수록 몸무게당 에너지 소비는 오히려 적다. 쥐가 코끼리보다 심장이 훨씬 빨리 뛰는 이유와 이어진다.",
+   "who": "맥스 클라이버, 1930년대 초",
+   "source": {
+    "title": "Wikipedia: Kleiber's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kleiber%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "buys",
+   "ko": "보이스 발롯 법칙",
+   "en": "Buys Ballot's law",
+   "field": "earth",
+   "formula": "북반구에서 바람을 등지면 저기압이 왼쪽",
+   "statement": "북반구에서 바람을 등지고 서면 저기압은 왼쪽 앞, 고기압은 오른쪽 뒤에 있다.",
+   "why": "지구 자전의 코리올리 효과로 바람이 기압 경도력과 어긋나 휘기 때문이다. 남반구에서는 반대다.",
+   "who": "크리스토프 보이스 발롯, 1857 (윌리엄 페렐이 1856년 이론적으로 먼저 유도)",
+   "source": {
+    "title": "Wikipedia: Buys Ballot's law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Buys_Ballot%27s_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "gutenberg",
+   "ko": "구텐베르크-리히터 법칙",
+   "en": "Gutenberg–Richter law",
+   "field": "earth",
+   "formula": "log N = a − bM",
+   "statement": "지진의 규모가 1 커질 때마다 그 규모 이상의 지진 횟수는 약 10분의 1로 줄어든다.",
+   "why": "큰 지진은 드물고 작은 지진은 흔하다는 사실을 식으로 나타낸 것이다. b 값은 대략 1이다.",
+   "who": "베노 구텐베르크, 찰스 리히터, 1944",
+   "source": {
+    "title": "Wikipedia: Gutenberg–Richter law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gutenberg%E2%80%93Richter_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "superposition",
+   "ko": "지층 누중의 법칙",
+   "en": "Law of superposition",
+   "field": "earth",
+   "formula": "아래 지층이 더 오래됨",
+   "statement": "뒤집히지 않은 지층에서는 아래에 있는 지층이 위에 있는 지층보다 먼저 쌓였다.",
+   "why": "지층의 상대적인 나이를 가르는 가장 기본 규칙이다. 지각 변동으로 뒤집힌 곳은 따로 확인해야 한다.",
+   "who": "니콜라우스 스테노, 1669",
+   "source": {
+    "title": "Wikipedia: Law of superposition",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Law_of_superposition",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "faunal",
+   "ko": "동물군 천이의 법칙",
+   "en": "Faunal succession",
+   "field": "earth",
+   "formula": "같은 화석 = 같은 시기",
+   "statement": "지층마다 들어 있는 화석의 종류가 달라서, 같은 화석이 나오는 지층은 같은 시기에 쌓였다고 볼 수 있다.",
+   "why": "멀리 떨어진 지층끼리 나이를 맞출 때 표준 화석을 이용한다.",
+   "who": "윌리엄 스미스, 19세기 초",
+   "source": {
+    "title": "Wikipedia: Faunal succession",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Faunal_succession",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "frank",
+   "ko": "프랑크-스탈링 법칙",
+   "en": "Frank–Starling law",
+   "field": "body",
+   "formula": "채워진 혈액이 많을수록 더 세게 짜냄",
+   "statement": "심장이 이완기에 혈액으로 더 많이 채워져 늘어나면, 다음 수축 때 더 많은 혈액을 내보낸다.",
+   "why": "운동할 때 정맥으로 돌아오는 피가 늘면 심장이 자동으로 박출량을 늘려 맞춘다.",
+   "who": "오토 프랑크 1895, 어니스트 스탈링 1914",
+   "source": {
+    "title": "Wikipedia: Frank–Starling law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Frank%E2%80%93Starling_law",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "poiseuille",
+   "ko": "푸아죄유의 법칙",
+   "en": "Poiseuille equation",
+   "field": "body",
+   "formula": "Q = πΔP r⁴ / (8ηL)",
+   "statement": "관을 흐르는 유체의 흐름량은 관 반지름의 네제곱에 비례한다.",
+   "why": "혈관 반지름이 조금만 좁아져도 혈류가 크게 줄어드는 이유다. 동맥경화의 위험을 설명한다.",
+   "who": "장 푸아죄유 1838~1841 (고트힐프 하겐이 독립적으로 유도)",
+   "source": {
+    "title": "Wikipedia: Poiseuille equation",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Poiseuille_equation",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "fick",
+   "ko": "픽의 확산 법칙",
+   "en": "Fick's laws of diffusion",
+   "field": "body",
+   "formula": "J = −D·dC/dx",
+   "statement": "물질은 농도가 높은 곳에서 낮은 곳으로 이동하며, 이동량은 농도 기울기에 비례한다.",
+   "why": "허파꽈리에서 산소가 혈액으로 들어가고 이산화탄소가 나오는 과정이 확산이다. 허파꽈리가 얇고 넓은 이유가 된다.",
+   "who": "아돌프 픽, 1855",
+   "source": {
+    "title": "Wikipedia: Fick's laws of diffusion",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Fick%27s_laws_of_diffusion",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "weber",
+   "ko": "웨버-페히너 법칙",
+   "en": "Weber–Fechner law",
+   "field": "body",
+   "formula": "감각 크기 ∝ log(자극 세기)",
+   "statement": "감각의 세기는 자극 세기의 로그에 비례한다. 즉 원래 자극이 클수록 차이를 느끼려면 더 큰 변화가 필요하다.",
+   "why": "촛불 하나를 켜면 어두운 방에서는 확 밝아지지만 환한 방에서는 티가 안 난다. 소리의 데시벨 눈금이 로그인 이유다.",
+   "who": "에른스트 베버(실험), 구스타프 페히너 1860",
+   "source": {
+    "title": "Wikipedia: Weber–Fechner law",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Weber%E2%80%93Fechner_law",
+    "license": "CC BY-SA 4.0"
+   }
+  }
+ ]
+}
