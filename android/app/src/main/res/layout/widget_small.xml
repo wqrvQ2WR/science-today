@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 2x1: 분야 + 제목만. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/widget_bg_chem"
+    android:paddingStart="14dp"
+    android:paddingEnd="14dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/widget_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘의 과학 · 화학"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="#D9FFFFFF"
+        android:fontFamily="@font/pretendard_bold" />
+
+    <TextView
+        android:id="@+id/widget_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="순수한 소듐은 물과 만나면 폭발한다!"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:lineSpacingMultiplier="1.05"
+        android:textColor="#FFFFFFFF"
+        android:fontFamily="@font/pretendard_extrabold" />
+</LinearLayout>
